@@ -1,0 +1,50 @@
+$DarkBlue: hsl(209, 23%, 22%); // (Dark Mode Elements)
+$VeryDarkBlue : hsl(207, 26%, 17%); //(Dark Mode Background)
+$DarkGray: hsl(0, 0%, 52%); // (Light Mode Input)
+$Shadow: hsl(0, 0%, 90%); // (Light Mode Input)
+$VeryLightGray : hsl(0, 0%, 98%); //(Light Mode Background)
+$White: hsl(0, 0%, 100%); // (Dark Mode Text & Light Mode Elements)
+
+
+
+$bp-large: 78.15em; // 1250px
+$bp-medium: 61.25em; // 980px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em;// 500px
+
+@import './header/header.scss';
+@import './components//stLifeSearch.scss';
+@import './components/stFilterRegion.scss';
+@import './contentCountry/stCountry.scss';
+@import './components/stCountryDetails.scss';
+
+
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 50%;
+    }
+  }
+  
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300, 600, 800;
+}
+body.dark-mode{
+background-color:$VeryDarkBlue ;
+
+}

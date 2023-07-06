@@ -1,0 +1,55 @@
+.head {
+
+    background-color : $White ;
+    padding: 0%;
+    margin-bottom: 5px;
+    box-shadow: 1px 5px 5px  $Shadow;
+
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .item{
+            margin: 2% 5%;
+            .font-header{
+                font-size: 1.5rem;  
+                text-align: center;
+                
+            }
+        }
+        .item1{
+            margin: 2% 5% ;
+        .btn-darkMode{
+            border: none;
+            font-size: 1.5rem;  
+            background-color: $White;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+    }
+    
+
+}
+
+
+.dark-mode{
+    .head {
+        background-color: $DarkBlue;
+        color: $White ;
+        box-shadow: none;
+
+        .container{
+            .item1{
+            .btn-darkMode{
+                background-color: $DarkBlue;
+                color: $White ;
+            }
+        }
+        }
+        
+    
+    }
+}

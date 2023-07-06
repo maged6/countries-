@@ -1,0 +1,94 @@
+.dropdown{
+  
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    box-shadow: 1px 5px 5px  $Shadow;
+
+    .dropbtn{
+      display: flex;
+      justify-content: space-between;
+        background-color: $White;
+        padding: 7%;
+        border: none;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        cursor: pointer;
+
+
+    }
+    .dropdown-content{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color:$White;
+        min-width: 100%;
+        box-shadow: 1px 5px 5px  $Shadow;
+        z-index: 1;
+        .filter-option {
+          margin: 3%;
+
+        }
+        .filter-option-label {
+          color: black;
+          padding: 5%;
+          cursor: pointer;
+          margin: 3%;
+          font-size: large;
+          text-decoration: none;
+        }
+ 
+    }
+}
+.dark-mode{
+  .dropdown{
+box-shadow: none;
+    background-color: $DarkBlue;
+    color: white;
+    .dropbtn{
+      background-color: $DarkBlue;
+      color: white;
+
+        span{
+          background-color: $DarkBlue;
+          color: white;
+
+        
+        }
+
+    }
+    .dropdown-content{
+      background-color: $DarkBlue;
+      color: white;
+      box-shadow:none;
+
+        .filter-option {
+          background-color: $DarkBlue;
+          color: white;
+
+
+        }
+        .filter-option-label {
+          background-color: $DarkBlue;
+          color: white;
+
+        }
+ 
+    }
+}
+
+}
+
+
+@media screen and ( max-width: 500px) {
+  .dropdown{
+    width: 100%;
+    height:4em;
+    margin: 1%;
+    .dropbtn{
+        padding: 3% 6% 6%  6%;
+    }
+
+  }
+}
